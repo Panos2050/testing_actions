@@ -75,7 +75,7 @@ jobs:
       - name: run trivy filesystem security_scan
         uses: aquasecurity/trivy-action@0.28.0
         with:
-          scantype: fs
+          scan-type: fs
           scan-ref: .
           format: json
           exit-code: 0
